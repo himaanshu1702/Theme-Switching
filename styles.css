@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.button {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  /* align-items: center;   vertically center */
+  gap: 1rem;               /* space between buttons */
+  margin-bottom: 2rem;     /* space below buttons */
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.04);
+    background-color: #70e000;
+    color: white;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+
+}
+
+
+article {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Light Mode: Hover on Dark Button */
+body:not(.dark-theme) #darkBtn:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Dark Mode: Hover on Light Button */
+body.dark-theme #lightBtn:hover {
+  background-color: #ffc107;
+  color: #000;
+}
